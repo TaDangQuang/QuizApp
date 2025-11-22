@@ -3,89 +3,117 @@ import Results from "./Results";
 
 const quizData = [
   {
-    question: "Biến nào sau đây là hợp lệ trong JavaScript?",
-    options: ["1variable", "_variable", "var-name", "var name"],
-    answer: "_variable",
-  },
-  {
-    question:
-      "Trong JavaScript, kiểu dữ liệu nào sau đây là kiểu dữ liệu nguyên thủy (primitive)?",
-    options: ["object", "array", "string", "function"],
-    answer: "string",
-  },
-  {
-    question:
-      "Thuật toán sắp xếp nào sau đây có độ phức tạp trung bình là O(n log n)?",
-    options: ["Bubble Sort", "Insertion Sort", "Merge Sort", "Linear Sort"],
-    answer: "Merge Sort",
-  },
-  {
-    question: "Kết quả của `typeof null` trong JavaScript là gì?",
-    options: ["'null'", "'undefined'", "'object'", "'number'"],
-    answer: "'object'",
-  },
-  {
-    question: "Bộ nhớ Stack dùng để làm gì?",
+    question: "Nhà Lý dời đô từ Hoa Lư ra Thăng Long vào năm nào?",
     options: [
-      "Lưu trữ dữ liệu dạng hàng đợi",
-      "Lưu trữ các lời gọi hàm (function calls)",
-      "Lưu ảnh",
-      "Lưu video",
+      "1005",
+      "1009",
+      "1010",
+      "1012"
     ],
-    answer: "Lưu trữ các lời gọi hàm (function calls)",
+    answer: "1010",
   },
   {
-    question: "Toán tử nào so sánh nghiêm ngặt giá trị và kiểu dữ liệu?",
-    options: ["==", "===", "!=", "="],
-    answer: "===",
-  },
-  {
-    question: "JSON là viết tắt của gì?",
+    question: "Chiến dịch Điện Biên Phủ năm 1954 do ai chỉ huy?",
     options: [
-      "Java Syntax Object Notation",
-      "JavaScript Object Notation",
-      "JavaScript Online Network",
-      "Java Server Object Notation",
+      "Võ Nguyên Giáp",
+      "Phạm Văn Đồng",
+      "Trường Chinh",
+      "Hồ Chí Minh"
     ],
-    answer: "JavaScript Object Notation",
+    answer: "Võ Nguyên Giáp",
   },
   {
-    question:
-      "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc FIFO (First In First Out)?",
-    options: ["Stack", "Queue", "Array", "Linked List"],
-    answer: "Queue",
-  },
-  {
-    question: "Câu lệnh nào in ra nội dung trong console trình duyệt?",
-    options: ["print()", "console.log()", "echo()", "show()"],
-    answer: "console.log()",
-  },
-  {
-    question: "Khi bạn viết `let x;` trong JavaScript, giá trị ban đầu của x là gì?",
-    options: ["null", "0", "undefined", "false"],
-    answer: "undefined",
-  },
-  {
-    question: "HTML là gì?",
+    question: "Hiệp định Giơ-ne-vơ năm 1954 quy định gì về Việt Nam?",
     options: [
-      "Ngôn ngữ lập trình để xử lý logic",
-      "Ngôn ngữ đánh dấu để tạo cấu trúc website",
-      "Framework của JavaScript",
-      "Trình duyệt web",
+      "Việt Nam thống nhất ngay lập tức",
+      "Chia Việt Nam thành hai miền tạm thời theo vĩ tuyến 17",
+      "Thành lập chính phủ liên hiệp hai miền",
+      "Pháp tiếp tục quản lý miền Nam"
     ],
-    answer: "Ngôn ngữ đánh dấu để tạo cấu trúc website",
+    answer: "Chia Việt Nam thành hai miền tạm thời theo vĩ tuyến 17",
   },
   {
-    question: "Trong thuật toán, Big O dùng để đo gì?",
+    question: "Cuộc Tổng tiến công và nổi dậy mùa Xuân 1975 kết thúc bằng chiến dịch nào?",
     options: [
-      "Tốc độ mạng",
-      "Thời gian load ảnh",
-      "Độ phức tạp của thuật toán",
-      "Dung lượng RAM máy tính",
+      "Chiến dịch Hạ Lào",
+      "Chiến dịch Hồ Chí Minh",
+      "Chiến dịch Điện Biên Phủ trên không",
+      "Chiến dịch Đường 14 - Phước Long"
     ],
-    answer: "Độ phức tạp của thuật toán",
+    answer: "Chiến dịch Hồ Chí Minh",
+  },
+  {
+    question: "Sự kiện khai sinh nước Việt Nam Dân chủ Cộng hòa diễn ra năm?",
+    options: ["1942", "1945", "1954", "1975"],
+    answer: "1945",
+  },
+  {
+    question: "Ai là người đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình?",
+    options: [
+      "Võ Nguyên Giáp",
+      "Hồ Chí Minh",
+      "Phạm Văn Đồng",
+      "Trần Phú"
+    ],
+    answer: "Hồ Chí Minh",
+  },
+  {
+    question: "Phong trào Cần Vương do ai phát động?",
+    options: [
+      "Nguyễn Ái Quốc",
+      "Tôn Thất Thuyết và vua Hàm Nghi",
+      "Phan Bội Châu",
+      "Phan Chu Trinh"
+    ],
+    answer: "Tôn Thất Thuyết và vua Hàm Nghi",
+  },
+  {
+    question: "Nhà Trần ba lần đánh bại quân xâm lược nào?",
+    options: [
+      "Quân Minh",
+      "Quân Mông - Nguyên",
+      "Quân Thanh",
+      "Quân Xiêm"
+    ],
+    answer: "Quân Mông - Nguyên",
+  },
+  {
+    question: "Binh pháp ‘Hịch tướng sĩ’ do ai soạn?",
+    options: [
+      "Nguyễn Trãi",
+      "Trần Hưng Đạo",
+      "Lê Lợi",
+      "Lê Thánh Tông"
+    ],
+    answer: "Trần Hưng Đạo",
+  },
+  {
+    question: "Chiến thắng Bạch Đằng năm 938 do ai lãnh đạo?",
+    options: [
+      "Ngô Quyền",
+      "Đinh Bộ Lĩnh",
+      "Lê Hoàn",
+      "Trần Quốc Tuấn"
+    ],
+    answer: "Ngô Quyền",
+  },
+  {
+    question: "Ngô Quyền đánh bại quân Nam Hán bằng chiến thuật gì?",
+    options: [
+      "Mai phục trên núi",
+      "Dùng tượng binh",
+      "Cắm cọc trên sông",
+      "Đánh biển xa bờ"
+    ],
+    answer: "Cắm cọc trên sông",
+  },
+  {
+    question: "Chiến thắng ‘Điện Biên Phủ trên không’ diễn ra vào năm nào?",
+    options: ["1968", "1972", "1975", "1980"],
+    answer: "1972",
   },
 ];
+
 const Quiz = () => {
 
   const [optionSelected, setOptionSelection] = useState("");
@@ -163,7 +191,7 @@ const Quiz = () => {
 
   return (
     <div>
-      <h2>Câu {currentQuestion + 1}</h2>
+      <h2 className="text-xl font-semibold text-center mb-4">Câu {currentQuestion + 1}</h2>
       <p className="question">{quizData[currentQuestion].question}</p>
 
       {quizData[currentQuestion].options.map((option, index) => (

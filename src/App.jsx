@@ -7,7 +7,6 @@ import {
 } from 'react-router'
 import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
-import QuizPage from "./pages/QuizPage";
 
 function App() {
 
@@ -19,13 +18,6 @@ function App() {
           <Route 
             path="/"
             element={<HomePage />}
-          >
-            
-          </Route>
-
-          <Route 
-            path="/quizpage"
-            element={<QuizPage />}
           >
             
           </Route>
