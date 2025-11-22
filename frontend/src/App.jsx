@@ -1,13 +1,43 @@
 import Quiz from "./components/Quiz"
+import { Toaster} from 'sonner';
+import { 
+    BrowserRouter,
+    Routes,
+    Route
+} from 'react-router'
+import HomePage from "./pages/HomePage";
+import NotFound from "./pages/NotFound";
+import QuizPage from "./pages/QuizPage";
 
 function App() {
 
   return (
     <>
-      <div className="container">
-        <h1>Quizz vui</h1>
-        <Quiz/>
-      </div>
+      <Toaster />
+      <BrowserRouter>  
+        <Routes>
+          <Route 
+            path="/"
+            element={<HomePage />}
+          >
+            
+          </Route>
+
+          <Route 
+            path="/quizpage"
+            element={<QuizPage />}
+          >
+            
+          </Route>
+
+          <Route 
+            path="*"
+            element={<NotFound />}
+          >
+            
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
